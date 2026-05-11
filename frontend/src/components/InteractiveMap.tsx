@@ -1,4 +1,3 @@
-import React from 'react';
 import { MapContainer, TileLayer, CircleMarker, Popup } from 'react-leaflet';
 import type { RegionRecord } from '../types';
 import { calculateRisk, riskLevel, calculateOveruse } from '../hooks/useAgriData';

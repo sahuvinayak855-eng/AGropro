@@ -1,5 +1,4 @@
-import React from 'react';
-import { ChevronDown, Download, Menu } from 'lucide-react';
+import { ChevronDown, Menu } from 'lucide-react';
 
 export function Navbar() {
   return (

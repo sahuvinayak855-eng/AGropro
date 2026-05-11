@@ -1,4 +1,3 @@
-import React from 'react';
 import { InteractiveMap } from './components/InteractiveMap';
 import { Metrics } from './components/Metrics';
 import { DatabaseSection } from './components/DatabaseSection';

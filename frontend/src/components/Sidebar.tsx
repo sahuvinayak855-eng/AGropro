@@ -1,4 +1,3 @@
-import React from 'react';
 import { Globe, Map, Database, ShieldAlert, Settings } from 'lucide-react';
 
 export function Sidebar() {

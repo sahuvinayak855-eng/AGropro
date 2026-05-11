@@ -1,4 +1,3 @@
-import React from 'react';
 
 export function Hero({ avgRisk }: { avgRisk: number }) {
   const heroRiskCopy = avgRisk >= 62
