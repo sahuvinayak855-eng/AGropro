@@ -123,7 +123,7 @@ export function DatabaseSection({
           <button onClick={onResetData} className="btn-3d px-4 py-2 text-sm font-semibold text-ink transition-colors">
             Reset Data
           </button>
-          <button onClick={() => setIsModalOpen(true)} className="btn-3d px-4 py-2 text-sm font-semibold flex items-center gap-2 transition-colors">
+          <button onClick={() => setIsModalOpen(true)} className="btn-black px-4 py-2 text-sm font-semibold flex items-center gap-2">
             <Plus size={16} /> Add Record
           </button>
         </div>
