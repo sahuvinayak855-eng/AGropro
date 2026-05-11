@@ -25,15 +25,15 @@ function App() {
       <main className="w-full flex-1 mx-auto pt-24" id="home">
         
         <section className="w-full min-h-[90vh] relative overflow-hidden flex flex-col items-center justify-center pt-24 pb-20" style={{ backgroundColor: '#ffffff' }}>
-          <div className="absolute inset-0 z-0 opacity-40">
+          <div className="absolute inset-0 z-0 opacity-80">
             <Particles
               particleColors={["#000000"]}
-              particleCount={150}
+              particleCount={750}
               particleSpread={10}
               speed={0.1}
               particleBaseSize={80}
               moveParticlesOnHover={false}
-              alphaParticles={true}
+              alphaParticles={false}
               disableRotation={false}
               pixelRatio={1}
             />
