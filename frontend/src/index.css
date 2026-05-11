@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@import 'leaflet/dist/leaflet.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/inter/800.css';
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/700.css';
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-success: #000000;
+  --color-warning: #333333;
+  --color-critical: #000000;
+  
+  --color-paper: #ffffff;
+  --color-surface: #f9f9f9;
+  --color-ink: #000000;
+  --color-muted: #666666;
+  --color-border: #e5e5e5;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  margin: 0;
+}
+
+.data-number {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.bento-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,0.02);
+  box-shadow: 
+    rgba(158, 158, 158, 0.69) 0px 0.706592px 0.706592px -0.583333px, 
+    rgba(158, 158, 158, 0.68) 0px 1.80656px 1.80656px -1.16667px, 
+    rgba(158, 158, 158, 0.65) 0px 3.62176px 3.62176px -1.75px, 
+    rgba(158, 158, 158, 0.61) 0px 6.8656px 6.8656px -2.33333px, 
+    rgba(158, 158, 158, 0.52) 0px 13.6468px 13.6468px -2.91667px, 
+    rgba(158, 158, 158, 0.3) 0px 30px 30px -3.5px, 
+    rgb(255, 255, 255) 0px 3px 1px 0px inset;
+}
+
+.glass-panel {
+  @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-lg;
+}
+
+.btn-3d {
+  background-color: #f5f5f5;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 
+    rgba(158, 158, 158, 0.69) 0px 0.706592px 0.706592px -0.583333px, 
+    rgba(158, 158, 158, 0.68) 0px 1.80656px 1.80656px -1.16667px, 
+    rgba(158, 158, 158, 0.65) 0px 3.62176px 3.62176px -1.75px, 
+    rgba(158, 158, 158, 0.61) 0px 6.8656px 6.8656px -2.33333px, 
+    rgba(158, 158, 158, 0.52) 0px 13.6468px 13.6468px -2.91667px, 
+    rgba(158, 158, 158, 0.3) 0px 30px 30px -3.5px, 
+    rgb(255, 255, 255) 0px 3px 1px 0px inset;
+  transition: transform 0.1s ease;
+}
+.btn-3d:active {
+  transform: scale(0.98);
+}
+
+.btn-black {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 20px;
+  transition: all 0.2s ease;
+}
+.btn-black:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 12px 24px;
+}
